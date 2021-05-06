@@ -12,13 +12,54 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js"></script>
-
+    <script src="/JS/carrito.js"></script>
+    
 </head>
 
 <body>
 
-    <h1>Bienvenido</h1>
+    <main class="container">
+        <div class="row">
+            <article class="col-sm-3">
+                <img src="imagenes/1.jpg" alt="">
+                <p>Xbox 360</p>
+                <p>$ 1000</p>
+                <button class="btn btn-primary" onclick="agregarProducto('Xbox 360', 1000)">Agregar al Carrito</button>
+            </article>
+            <article class="col-sm-3">
+                <img src="imagenes/2.jpg" alt="">
+                <p>Play Station</p>
+                <p>$ 2000</p>
+                <button class="btn btn-primary" onclick="agregarProducto('Play Station', 2000)">Agregar al Carrito</button>
+            </article>
+            <article class="col-sm-3">
+                <img src="imagenes/3.jpg" alt="">
+                <p>SEGA</p>
+                <p>$ 3000</p>
+                <button class="btn btn-primary" onclick="agregarProducto('SEGA', 3000)">Agregar al Carrito</button>
+            </article>
+            <article class="col-sm-3">
+                <img src="imagenes/4.jpg" alt="">
+                <p>Nintendo</p>
+                <p>$ 4000</p>
+                <button class="btn btn-primary" onclick="agregarProducto('Nintendo', 4000)">Agregar al Carrito</button>
+            </article>
+        </div>
+
+        <div class="row">
+            <button class="btn btn-secondary" onclick="mostrarProductos()">
+                <span id="total-productos"></span>
+                Ver resumen del carrito
+            </button>
+        </div>
+
+        <div class="row">
+            <div id="contenedor-productos">
+
+            </div>
+        </div>
+
+    </main>
     
 </body>
 </html>
